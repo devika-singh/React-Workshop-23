@@ -1,3 +1,6 @@
+import fb from './assets/fb.svg';
+import twi from './assets/twi.svg';
+
 const Footer = () => {
 	return(
 		<footer>
@@ -17,7 +20,7 @@ const Footer = () => {
 				</div>
 				<div>
 					<h3>Connect with us</h3>
-					
+					<p style={{fontSize:'2vmin',fontWeight:'bold',pointerEvents:'None'}}> f </p>
 				</div>
 			</div>
 			

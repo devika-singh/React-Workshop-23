@@ -33,7 +33,7 @@ const Home = () => {
 		<div className="Home">
 			{movies && <CardList movies={movies} title='All' />}
 			{newMov && <CardList movies={newMov} title='New'/>}
-			{trendMov && <CardList movies={trendMov} tile='Trending'/>}
+			{trendMov && <CardList movies={trendMov} title='Trending'/>}
 			{reccMov && <CardList movies={reccMov} title='Recommended'/>}
 			{ogMov && <CardList movies={ogMov} title='Original'/>}
      		<Footer/>
