@@ -3,8 +3,10 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import MainPage from './MainPage.js';
 import LandingPage from './LandingPage';
 import Movie from './Movie';
+import { useSelector, Provider } from 'react-redux';
 
 function App() {
+const counter = useSelector((state) => state.counter);
   return (
 	<BrowserRouter>
 		<Routes>
@@ -13,7 +15,6 @@ function App() {
 		<Route path='/explore/:title' element={<Movie />}/>
 		</Routes>
 	</BrowserRouter>
-    
   );
 }
 
