@@ -3,7 +3,7 @@ import Movie from './Movie';
 import { Link } from 'react-router-dom';
 
 const CardList = ({movies,title}) => {
-	console.log(title + movies);
+	//console.log(title + movies);
 	const jsx = movies.map((movie) => {
 		let imgLoc = 'url(\"'+movie.cardImg + '\")';
 		return(
@@ -23,7 +23,6 @@ const CardList = ({movies,title}) => {
 		if(box){
 		let width = box.clientWidth;
 		box.scrollLeft = box.scrollLeft - width;
-		console.log(width);
 		}
 	}
 	
@@ -31,7 +30,6 @@ const CardList = ({movies,title}) => {
 		if(box){
 		let width = box.clientWidth;
 		box.scrollLeft = box.scrollLeft + width;
-		console.log(width);
 		}
 	}
 		
